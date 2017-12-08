@@ -1,0 +1,40 @@
+# We 'require' the code-generators listed here so that dep vendors them for us.
+# Whilst we don't directly depend on any code in k8s.io/code-generator, the
+# repository is required in order to use ./hack/update-codegen.sh.
+required = [
+  "k8s.io/code-generator/cmd/client-gen",
+  "k8s.io/code-generator/cmd/conversion-gen",
+  "k8s.io/code-generator/cmd/deepcopy-gen",
+  "k8s.io/code-generator/cmd/defaulter-gen",
+  "k8s.io/code-generator/cmd/informer-gen",
+  "k8s.io/code-generator/cmd/lister-gen",
+]
+
+
+[[constraint]]
+  name = "github.com/pkg/errors"
+  version = "0.8.0"
+
+[[constraint]]
+  name = "go.uber.org/zap"
+  version = "1.7.1"
+
+[[constraint]]
+  branch = "master"
+  name = "golang.org/x/sync"
+
+[[constraint]]
+  branch = "master"
+  name = "k8s.io/api"
+
+[[constraint]]
+  branch = "master"
+  name = "k8s.io/apiextensions-apiserver"
+
+[[constraint]]
+  branch = "master"
+  name = "k8s.io/apimachinery"
+
+[[constraint]]
+  name = "k8s.io/client-go"
+  version = "5.0.1"
