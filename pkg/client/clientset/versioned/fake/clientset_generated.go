@@ -2,8 +2,8 @@ package fake
 
 import (
 	clientset "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned"
-	redisclusterv1alpha1 "github.com/olivierboucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1"
-	fakeredisclusterv1alpha1 "github.com/olivierboucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1/fake"
+	redisclusterv1alpha1 "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1"
+	fakeredisclusterv1alpha1 "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

@@ -1,7 +1,7 @@
 package scheme
 
 import (
-	redisclusterv1alpha1 "github.com/olivierboucher/redis-cluster-operator/pkg/apis/rediscluster/v1alpha1"
+	redisclusterv1alpha1 "github.com/OlivierBoucher/redis-cluster-operator/pkg/apis/rediscluster/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
