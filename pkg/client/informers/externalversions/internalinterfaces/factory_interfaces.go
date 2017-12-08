@@ -3,11 +3,11 @@
 package internalinterfaces
 
 import (
-	time "time"
-
 	versioned "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned"
+	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	cache "k8s.io/client-go/tools/cache"
+	time "time"
 )
 
 type NewInformerFunc func(versioned.Interface, time.Duration) cache.SharedIndexInformer
@@ -17,3 +17,5 @@ type SharedInformerFactory interface {
 	Start(stopCh <-chan struct{})
 	InformerFor(obj runtime.Object, newFunc NewInformerFunc) cache.SharedIndexInformer
 }
+
+type TweakListOptionsFunc func(*v1.ListOptions)

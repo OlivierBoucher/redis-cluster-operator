@@ -1,8 +1,8 @@
 package versioned
 
 import (
-	redisclusterv1alpha1 "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1"
 	glog "github.com/golang/glog"
+	redisclusterv1alpha1 "github.com/OlivierBoucher/redis-cluster-operator/pkg/client/clientset/versioned/typed/rediscluster/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
